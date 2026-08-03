@@ -1,0 +1,6 @@
+{
+  "name": "QuizWiz",
+  "description": "Interactive Quiz Application with subject selection, live trivia questions, score tracking, auto-save progress, and persistent user sessions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

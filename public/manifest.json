@@ -1,0 +1,27 @@
+{
+  "name": "QuizWiz - Trivia & Gaming",
+  "short_name": "QuizWiz",
+  "description": "Learn Smart, Play Smarter! Ultimate Trivia & Gaming Mobile App",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#040112",
+  "theme_color": "#040112",
+  "categories": ["education", "games", "entertainment"],
+  "icons": [
+    {
+      "src": "/app-logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/app-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #040112;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.2) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(34, 197, 94, 0.15) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: #F8FAFC;
+  }
+}
+
+/* Artistic Flair Design Utility Classes */
+.artistic-canvas-card {
+  background: rgba(255, 253, 249, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  box-shadow: 0 10px 30px -5px rgba(180, 83, 9, 0.1);
+}
+
+.artistic-flair-border {
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #f59e0b, #ec4899, #8b5cf6);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.artistic-glow-gold {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+}
+
+/* Neon Glow Utilities for Theme 2 (Cyber) */
+.artistic-glow-yellow {
+  box-shadow: 0 0 25px rgba(251, 191, 36, 0.35);
+}
+
+.artistic-glow-purple {
+  box-shadow: 0 0 30px rgba(147, 51, 234, 0.35);
+}
+
+.artistic-glow-pink {
+  box-shadow: 0 0 25px rgba(236, 72, 153, 0.35);
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.45);
+}
+
+.neon-glow-green {
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.45);
+}
+
+.neon-border-cyber {
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+}
+
+/* ---------------------------------------------------- */
+/* ANIMATED BACKGROUND KEYFRAMES FOR KIDS SECTION       */
+/* ---------------------------------------------------- */
+
+@keyframes float-cloud-left {
+  0% { transform: translateX(-100px) translateY(0px); }
+  50% { transform: translateX(calc(100vw + 100px)) translateY(-15px); }
+  100% { transform: translateX(-100px) translateY(0px); }
+}
+
+@keyframes float-cloud-right {
+  0% { transform: translateX(calc(100vw + 100px)) translateY(0px); }
+  50% { transform: translateX(-100px) translateY(15px); }
+  100% { transform: translateX(calc(100vw + 100px)) translateY(0px); }
+}
+
+@keyframes float-bubble-up {
+  0% { transform: translateY(100%) scale(0.8); opacity: 0.2; }
+  50% { opacity: 0.8; transform: translateY(40%) scale(1.1); }
+  100% { transform: translateY(-20%) scale(0.9); opacity: 0; }
+}
+
+@keyframes pulse-star-rotate {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.7; }
+  50% { transform: scale(1.3) rotate(180deg); opacity: 1; }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-cloud-slow {
+  animation: float-cloud-left 28s linear infinite;
+}
+
+.animate-cloud-reverse {
+  animation: float-cloud-right 34s linear infinite;
+}
+
+.animate-bubble-1 {
+  animation: float-bubble-up 12s ease-in-out infinite;
+}
+
+.animate-bubble-2 {
+  animation: float-bubble-up 16s ease-in-out infinite 3s;
+}
+
+.animate-bubble-3 {
+  animation: float-bubble-up 14s ease-in-out infinite 7s;
+}
+
+.animate-star-pulse {
+  animation: pulse-star-rotate 4s infinite ease-in-out;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2.5s infinite ease-in-out;
+}
+
